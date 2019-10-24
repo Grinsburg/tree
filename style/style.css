@@ -11,7 +11,7 @@ ul li {
 
 li.folder>span::before {
     content: "";
-    background-image: url(img/folder.png);
+    background-image: url(../img/folder.png);
     width: 20px;
     height: 20px;
     display: inline-block;
@@ -22,13 +22,13 @@ li.folder>span::before {
 
 li.folder>span::after {
     content: "\25BC";
-    margin-left: 15px;
+    margin-left: 5px;
     text-decoration: none;
 }
 
 li.file>span::before {
     content: "";
-    background-image: url(/img/file.png);
+    background-image: url(../img/file.png);
     width: 20px;
     height: 20px;
     display: inline-block;

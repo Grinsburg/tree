@@ -1,12 +1,11 @@
 function to_ul(branches) {
     let ul = document.createElement("ul");
     ul.setAttribute('class', 'nested');
-
     for (let i = 0, n = branches.length; i < n; i++) {
         let branch = branches[i];
         let li = document.createElement("li");
         let spn = document.createElement('span');
-        spn.setAttribute('class', 'caret')
+        spn.setAttribute('class', 'caret');
         let text = document.createTextNode(branch.name);
         li.appendChild(spn);
         spn.appendChild(text);
@@ -72,10 +71,8 @@ function renderTree() {
 
 renderTree();
 
-var toggler = document.getElementsByClassName("caret"); //то на что мы нажимаем для сворачивания
-var i;
-//nested - то, где все сворачивается
-for (i = 0; i < toggler.length; i++) {
+let toggler = document.getElementsByClassName("caret");
+for (let i = 0; i < toggler.length; i++) {
     toggler[i].addEventListener("click", function() {
         this.parentElement.querySelector(".nested").classList.toggle("active");
         this.classList.toggle("caret-down");
