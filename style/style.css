@@ -2,10 +2,14 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
+ul {
+    display: inline;
+}
+
 ul li {
     /* font-weight: bold; */
     font-size: 18px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     cursor: pointer;
 }
 
@@ -21,9 +25,9 @@ li.folder>span::before {
 }
 
 li.folder>span::after {
+    padding-top: 1px;
+    position: absolute;
     content: "\25BC";
-    margin-left: 5px;
-    text-decoration: none;
 }
 
 li.file>span::before {
