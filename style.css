@@ -1,0 +1,57 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul li {
+    /* font-weight: bold; */
+    font-size: 18px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+li.folder>span::before {
+    content: "";
+    background-image: url(img/folder.png);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2px;
+    background-size: contain;
+}
+
+li.folder>span::after {
+    content: "\25BC";
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+li.file>span::before {
+    content: "";
+    background-image: url(/img/file.png);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2px;
+    background-size: contain;
+}
+
+li.file {
+    font-style: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* ///////////////////////// */
+
+.nested {
+    display: none;
+}
+
+.active {
+    display: block;
+}
